@@ -36,7 +36,8 @@ jobs:
       - name: Install .NET
         uses: codebeltnet/install-dotnet@v1
         with:
-          dotnet-version: 6.x
+          dotnet-version: '6.0.x'
+          includePreview: 'false'
 
       - name: Install MinVer
         uses: codebeltnet/dotnet-tool-install-minver@v1
@@ -87,7 +88,8 @@ jobs:
       - name: Install .NET
         uses: codebeltnet/install-dotnet@v1
         with:
-          dotnet-version: 6.x
+          dotnet-version: '6.0.x'
+          includePreview: 'false'
 
       - name: Install .NET Tool - Report Generator
         uses: codebeltnet/dotnet-tool-install-reportgenerator@v1
@@ -115,7 +117,8 @@ jobs:
       - name: Install .NET
         uses: codebeltnet/install-dotnet@v1
         with:
-          dotnet-version: 6.x
+          dotnet-version: '6.0.x'
+          includePreview: 'false'
 
       - name: Install .NET Tool - Sonar Scanner
         uses: codebeltnet/dotnet-tool-install-sonarscanner@v1
@@ -167,7 +170,8 @@ jobs:
       - name: Install .NET
         uses: codebeltnet/install-dotnet@v1
         with:
-          dotnet-version: 6.x
+          dotnet-version: '6.0.x'
+          includePreview: 'false'
 
       - name: Restore Dependencies
         uses: codebeltnet/dotnet-restore@v1
