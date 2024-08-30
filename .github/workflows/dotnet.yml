@@ -53,11 +53,13 @@ jobs:
         uses: codebeltnet/dotnet-build@v1
         with:
           configuration: Debug
+          framework: 'net6.0'
 
       - name: Build for Production
         uses: codebeltnet/dotnet-build@v1
         with:
           configuration: Release
+          framework: 'net6.0'
 
   pack:
     name: 📦 Pack
@@ -98,12 +100,14 @@ jobs:
         uses: codebeltnet/dotnet-test@v1
         with:
           configuration: Debug
+          framework: 'net6.0'
           buildSwitches: -p:SkipSignAssembly=true
 
       - name: Test with Release build
         uses: codebeltnet/dotnet-test@v1
         with:
           configuration: Release
+          framework: 'net6.0'
           buildSwitches: -p:SkipSignAssembly=true
 
   sonarcloud:
@@ -138,6 +142,7 @@ jobs:
         uses: codebeltnet/dotnet-build@v1
         with:
           buildSwitches: -p:SkipSignAssembly=true
+          framework: 'net6.0'
           uploadBuildArtifact: false
 
       - name: Finalize SonarCloud Analysis
@@ -183,6 +188,7 @@ jobs:
         uses: codebeltnet/dotnet-build@v1
         with:
           buildSwitches: -p:SkipSignAssembly=true
+          framework: 'net6.0'
           uploadBuildArtifact: false
 
       - name: Finalize CodeQL SAST Analysis
