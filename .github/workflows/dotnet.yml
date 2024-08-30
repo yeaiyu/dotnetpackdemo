@@ -35,6 +35,8 @@ jobs:
 
       - name: Install .NET
         uses: codebeltnet/install-dotnet@v1
+        with:
+          dotnet-version: 6.x
 
       - name: Install MinVer
         uses: codebeltnet/dotnet-tool-install-minver@v1
