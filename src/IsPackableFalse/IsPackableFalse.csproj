@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <Authors>yeaiyu</Authors>
+	  <Version>3.0.0</Version>
+	  <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+</Project>
